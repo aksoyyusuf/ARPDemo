@@ -7,7 +7,7 @@ import uuid
 sock = socket.socket(socket.PF_PACKET, socket.SOCK_RAW, socket.htons(0x0003))
 sock.bind(("enp0s3", 0))
 
-source_mac = "08:00:27:27:B7:F2"        # sender mac address
+source_mac = "11:11:11:11:11:11"        # sender mac address
 source_ip  = "10.0.2.15"                # sender ip address
 dest_mac = "\xff\xff\xff\xff\xff\xff"   # target mac address(broadcast)
 
