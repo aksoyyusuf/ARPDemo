@@ -7,7 +7,7 @@ import uuid
 
 rawSocket = socket.socket(socket.PF_PACKET, socket.SOCK_RAW, socket.htons(0x003))
 
-source_mac = "08:00:27:27:B7:F2" 		 # MAC adress
+source_mac = "11:11:11:11:11:11" 		 # MAC adress
 packedIP = socket.inet_aton('127.0.0.1')	 # IP Adress(localhost)
 source_ip = str(ipaddress.ip_address(packedIP))
 
