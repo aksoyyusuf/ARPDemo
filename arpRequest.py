@@ -33,9 +33,7 @@ sock.send(packet)
 
 while True:
 
-	print"Check1"
 	packet = sock.recv(2048)    
-	print"Check2"
 	ethernet_header = packet[0:14]
 	ethernet_detailed = struct.unpack("!6s6s2s", ethernet_header)
 	arp_header = packet[14:42]
