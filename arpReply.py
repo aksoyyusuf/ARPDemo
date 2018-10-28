@@ -58,7 +58,7 @@ while True:
 
 		#rawSocket.bind(("enp0s3", socket.htons(0x0003)))
 		rawSocket.bind(("enp0s3", 0))
-		print "Check1"
+		print "Preparing packet..."
 
 		source_ip  = "127.0.0.1"           # sender ip address
 		dest_mac = binascii.unhexlify(received_mac)   # target mac addres
@@ -81,7 +81,7 @@ while True:
 
 		packet = eth_hdr + arp_hdr
 		rawSocket.send(packet)
-		print "Check2"
+		print "Packet Sent"
 	    	continue
 
 
